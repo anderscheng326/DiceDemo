@@ -15,10 +15,18 @@
             {
                 d1score++;
             }
-            if(dice2.Topside()>dice1.Topside())
+            else if(dice2.Topside()>dice1.Topside())
             {
                 d2score++;
             }
+        }
+        if (d1score > d2score)
+        {
+            Console.WriteLine("Dice 1 wins!");
+        }
+        else if(d1score < d2score)
+        {
+            Console.WriteLine("Dice 2 wins!");
         }
      }
 }
